@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body class="bg-gray-200">
+    <div class="container mx-auto">
+      <div class="h-screen">
+          <form id="todoForm" class="flex items-center justify-center gap-5 p-6">
+          <input type="text" name="todoInput" class="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 text-xl" placeholder="What to do?" required/>
+
+          <button name="submitBtn" class="text-white text-xl bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2">Add</button>
+        </form>
+        <div id="noTodos" clas="p-6">
+          <div class="flex flex-col items-center gap-1" >
+            <lottie-player src="https://lottie.host/8f918572-02c7-4421-9d9a-7304b83be81e/IDJMZicPLo.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+            <h2 class = "text-3xl font-semibold">It's a Good day. No To Do List left...</h2>
+          </div>
+          <div id="todos" class="p-6 w-full flex flex-col gap-4"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
